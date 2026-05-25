@@ -1,7 +1,10 @@
 from google import genai
-
+import os
+from dotenv import load_dotenv
+load_dotenv()
 def process_notes_with_ai(extracted_text):
-    client = genai.Client(api_key='AIzaSyCoJyXzQfuliwVfCFoiIuTH_38FApc9D1o')
+    api_key = os.getenv("GEMINI_API_KEY")
+    client = genai.Client(api_key=api_key)
     
     prompt = f"""
     You are an expert academic assistant. Process the following raw text:
