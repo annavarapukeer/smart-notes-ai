@@ -15,12 +15,16 @@ def process_notes_with_ai(extracted_text):
     You are an advanced academic AI tutor. Process the following raw handwritten OCR text into an organized learning ecosystem.
     
     CRITICAL FORMATTING INSTRUCTIONS:
-    - Output your entire response using the clear section divider tags: [CLEANED_TEXT], [SUMMARY], [CONCEPT_TREE], [REVISION_TIERS], [QUIZ], and [ANSWERS].
+    - Output your entire response using the clear section divider tags: [CLEANED_TEXT], [SUMMARY], [CONCEPT_TREE], [REVISION_TIERS], [FLASHCARDS], [QUIZ], and [ANSWERS].
     
     - Under [CONCEPT_TREE], build a hierarchical bullet-point tree structure showing main topic down to subtopics (e.g., Main Topic -> Subtopic -> Details).
     
     - Under [REVISION_TIERS], generate a 1-sentence "Exam-Day Ultra Short Note" followed by a 3-bullet point "7-Day Core Concepts" summary.
     
+    - Under [FLASHCARDS], generate exactly 4 to 5 critical technical terms or definitions found in the context. Format each flashcard on a single new line using a strict colon separator like this:
+      Term Name : Precise clear definition string here
+      Key Component : Structural explanation statement here
+      
     - Under [QUIZ], generate exactly 5 multiple-choice questions based on the text context.
     Format each question EXACTLY like this:
       Q1: Question text here
