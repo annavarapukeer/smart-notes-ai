@@ -62,3 +62,51 @@ An advanced, full-stack AI-driven educational ecosystem that transforms static h
 │   └── dashboard.html      # Multi-Column Intelligence & Analytics Control Workspace
 └── static/
     └── uploads/            # Sandboxed Document Repository Path
+```
+⚙️ How to Run the Project (Local Setup Guide)
+Follow these precise steps to set up and deploy the project locally on your system:
+
+1. Clone the Repository
+Open your terminal or command prompt and clone the repository locally:
+
+
+git clone [https://github.com/annavarapukeer/agentic-ai-research-assistant.git](https://github.com/annavarapukeer/agentic-ai-research-assistant.git)
+cd smart-notes-ai
+
+2. Set Up a Virtual Environment (Recommended)
+Create and activate an isolated Python virtual environment:
+
+
+# Windows
+python -m venv venv
+venv\Scripts\activate
+
+# macOS/Linux
+python3 -m venv venv
+source venv/bin/activate
+
+3. Install Required Dependencies
+Install all the necessary machine learning, backend, and processing libraries:
+
+pip install flask google-genai easyocr pymupdf opencv-python python-dotenv reportlab
+
+4. Configure Environment Variables
+Create a file named .env in the root directory of the project and insert your configuration keys:
+
+FLASK_SECRET_KEY=super_secret_key_for_placements_project
+
+GEMINI_API_KEY=your_actual_gemini_api_key_here
+
+5. Initialize Server & Launch
+Run the main Flask engine application to fire up the server:
+
+python app.py
+
+Once executed successfully, open your web browser and navigate to:
+
+http://127.0.0.1:5000/
+
+
+✍️ Author
+
+Keerthana Annavarapu
